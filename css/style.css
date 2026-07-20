@@ -1,0 +1,154 @@
+/* ============================================================
+   Bai tap JS buoi 2-3 - Style chinh cho giao dien
+   ============================================================ */
+
+:root {
+  --brand-1: #6a5cff;
+  --brand-2: #ff6fb0;
+  --bg-soft: #f5f6fb;
+  --text-dark: #2b2d42;
+  --radius-lg: 20px;
+}
+
+body {
+  font-family: "Roboto", "Segoe UI", Arial, sans-serif;
+  color: var(--text-dark);
+  background-color: #fff8f2;
+  background-image: url("../img/bg14.png");
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+/* ---------- Header ---------- */
+header {
+  
+  background: linear-gradient(
+    120deg,
+    rgba(106, 92, 255, 0.88),
+    rgba(255, 111, 176, 0.88)
+  );
+  border-radius: 0 0 40px 40px;
+  color: #fff;
+  padding: 1rem 0;
+  position: relative;
+  overflow: hidden;
+}
+
+header h1 {
+  font-weight: 900;
+  letter-spacing: -0.5px;
+  color: #fff;
+}
+
+/* ---------- Nav pills chon bai tap ---------- */
+.exercise-nav {
+  margin-top: 2.5rem;
+}
+
+.exercise-nav .nav-pills .nav-link {
+  border-radius: 50px;
+  padding: 0.6rem 1.3rem;
+  font-weight: 600;
+  color: var(--text-dark);
+  background: #fff;
+  box-shadow: 0 6px 18px rgba(43, 45, 66, 0.08);  
+  transition: all 0.2s ease-in-out;
+}
+
+.exercise-nav .nav-pills .nav-link.active {
+  color: #fff;
+  background: linear-gradient(120deg, var(--brand-1), var(--brand-2));
+  border-color: transparent;
+}
+
+/* ---------- Card bai tap ---------- */
+.exercise {
+  border: none;
+  border-radius: var(--radius-lg);
+  box-shadow: 0 10px 30px rgba(43, 45, 66, 0.08);
+  overflow: hidden;
+}
+
+.exercise .exercise-header {
+  background: #fff;
+  border-bottom: 1px dashed #e1e2f5;
+  padding: 1.5rem 1.75rem 1rem;
+}
+
+.exercise .exercise-header .icon-badge {
+  width: 52px;
+  height: 52px;
+  border-radius: 16px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+  background: linear-gradient(120deg, var(--brand-1), var(--brand-2));
+  color: #fff;
+  margin-right: 14px;
+}
+
+.exercise .exercise-body {
+  padding: 1.75rem;
+}
+
+.exercise .form-label {
+  font-weight: 600;
+  font-size: 0.92rem;
+}
+
+.exercise .form-control:focus {
+  border-color: var(--brand-1);
+  box-shadow: 0 0 0 0.2rem rgba(106, 92, 255, 0.15);
+}
+
+.btn-brand {
+  background: linear-gradient(120deg, var(--brand-1), var(--brand-2));
+  border: none;
+  color: #fff;
+  font-weight: 600;
+  padding: 0.6rem 1.6rem;
+  border-radius: 50px;
+  transition: transform 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+.btn-brand:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(106, 92, 255, 0.35);
+  color: #fff;
+}
+
+.result-box {
+  border-radius: 14px;
+  background: #f4f5ff;
+  border: 1px dashed #c9cdf5;
+  padding: 1rem 1.25rem;
+  font-weight: 600;
+  min-height: 58px;
+  align-items: center;
+}
+
+.result-box.is-success {
+  background: #eafff1;
+  border-color: #9be8b5;
+  color: #147a3c;
+}
+
+.result-box.is-error {
+  background: #fff0f0;
+  border-color: #f3b0b0;
+  color: #b32424;
+}
+
+.hint-box {
+  font-size: 0.85rem;
+  color: #6c6f93;
+  background: #fbfbff;
+  border-left: 3px solid var(--brand-1);
+  padding: 0.6rem 0.9rem;
+  border-radius: 8px;
+  margin-bottom: 1.25rem;
+}
+
